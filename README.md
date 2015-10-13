@@ -1,3 +1,2 @@
 # MyDesignPriciple
-six design priciple and some pattern
-
+six design priciple and some pattern !
