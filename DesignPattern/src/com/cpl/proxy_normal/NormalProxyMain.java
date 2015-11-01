@@ -9,7 +9,7 @@ public class NormalProxyMain {
 		player.levelUp();
 		System.out.println("==============");
 		
-		System.out.println("=======下面这是没有通过指定代理！=======");
+		//
 		GameProxyN proxy = new GameProxyN("张三");
 		proxy.login("zhangs", "12345");
 		proxy.killMoster();
