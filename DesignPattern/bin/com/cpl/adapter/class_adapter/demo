@@ -1,0 +1,3 @@
+这种适配模式叫做类适配器模式
+主要是将外部的一个种类变为我们自己系统中合适的一个类，以此来避免大手术
+核心就是 extends Adaptee implements target

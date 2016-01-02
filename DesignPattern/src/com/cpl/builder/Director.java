@@ -22,7 +22,7 @@ public class Director {
 		this.order.add(AbstractFood.SALT);
 		return (SweetCake) cakeBuilder.cookFood(this.order);
 	}
-	/**第一种蛋糕*/
+	/**第二种蛋糕*/
 	public SweetCake getSweetCake2(){
 		order.clear();
 		this.order.add(AbstractFood.MUILK);

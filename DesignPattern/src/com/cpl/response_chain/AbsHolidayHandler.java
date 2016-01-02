@@ -9,7 +9,7 @@ public abstract class AbsHolidayHandler {
 	private AbsHolidayHandler mNext = null;
 
 	public final String solveTheRequest(IHolidayRequest request) {
-		if (isDealWithSelf(request)) { //个人感觉这里如果改为方法的话更好
+		if (isDealWithSelf(request)) { //个人感觉这里如果像这样改为方法的话更好
 			return dealWithRequest(request);
 		} else if (mNext != null) {
 			return mNext.solveTheRequest(request);
