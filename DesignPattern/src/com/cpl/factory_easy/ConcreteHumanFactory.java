@@ -11,7 +11,7 @@ public class ConcreteHumanFactory extends AbstarctHumanFactory{
 		IHuman human = null;
 		try {
 			human = (T) Class.forName(c.getName()).newInstance();//这个确实叼叼的
-		} catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
+		} catch (Exception/*InstantiationException | IllegalAccessException | ClassNotFoundException*/ e) {
 			e.printStackTrace();
 		}
 		return (T) human;

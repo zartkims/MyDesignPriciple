@@ -10,7 +10,6 @@ public class ClientMain {
 	public static void main(String[] args) {
 		Subject subject = new RealSubject();
 		InvocationHandler handler = new MyInvocationHandler(subject);//subject被代理了
-		new DynamicProxy<>();
 		Subject proxy = DynamicProxy.newProxyInstance(
 											subject.getClass().getClassLoader()
 											, subject.getClass().getInterfaces(), handler);

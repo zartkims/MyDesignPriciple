@@ -22,13 +22,7 @@ public class SingletonFactory {
 			Constructor ideaConstructor = ideaClass.getDeclaredConstructor();
 			ideaConstructor.setAccessible(true);
 			myIdea = (MyIdea) ideaConstructor.newInstance();
-		} catch ( ClassNotFoundException 
-				| SecurityException
-				| NoSuchMethodException 
-				| InstantiationException 
-				| IllegalAccessException 
-				| IllegalArgumentException
-				| InvocationTargetException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
