@@ -1,4 +1,4 @@
 # MyDesignPriciple
 
 six design priciple and some pattern !
-now play a game !!
+this project was created when i start learning design pattern
